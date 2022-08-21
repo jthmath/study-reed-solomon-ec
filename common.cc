@@ -11,4 +11,9 @@ void panicAndAbort(const std::string& s) noexcept
     std::terminate();
 }
 
+void panicForDividedByZero() noexcept
+{
+    panicAndAbort("divided by zero");
+}
+
 }

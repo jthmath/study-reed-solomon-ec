@@ -5,5 +5,7 @@
 
 int main()
 {
+    reedsolomon::init();
+
     return 0;
 }

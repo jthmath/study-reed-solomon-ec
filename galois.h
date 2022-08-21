@@ -6,7 +6,9 @@
 namespace reedsolomon
 {
 
-constexpr int FieldSize = 256;
+constexpr int FIELD_SIZE = 256;
+
+void init();
 
 class GaloisUInt8
 {
@@ -31,6 +33,11 @@ public:
 
     ~GaloisUInt8() noexcept = default;
 
+    uint8 rawValue() const
+    {
+        return a_;
+    }
+
     bool isZero() const
     {
         return a_ == zero_uint8;
@@ -39,6 +46,16 @@ public:
     bool isOne() const
     {
         return a_ == one_uint8;
+    }
+
+    bool operator==(GaloisUInt8 rhs) const
+    {
+        return a_ == rhs.a_;
+    }
+
+    bool operator!=(GaloisUInt8 rhs) const
+    {
+        return a_ != rhs.a_;
     }
 
     GaloisUInt8 operator+(const GaloisUInt8& rhs) const
