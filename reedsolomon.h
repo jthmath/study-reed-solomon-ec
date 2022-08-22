@@ -1,13 +1,8 @@
 #ifndef REED_SOLOMON_API_H_
 #define REED_SOLOMON_API_H_
 
+#include "common.h"
 #include "galois.h"
-
-namespace reedsolomon
-{
-
-class Matrix;
-
-}
+#include "matric.h"
 
 #endif

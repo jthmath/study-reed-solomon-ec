@@ -16,6 +16,10 @@ void panicAndAbort(const std::string& s) noexcept;
 
 void panicForDividedByZero() noexcept;
 
+void panicForUndefinedOperation() noexcept;
+
+void panicForBadOperation() noexcept;
+
 }
 
 #endif

@@ -16,4 +16,14 @@ void panicForDividedByZero() noexcept
     panicAndAbort("divided by zero");
 }
 
+void panicForUndefinedOperation() noexcept
+{
+    panicAndAbort("undefined operation");
+}
+
+void panicForBadOperation() noexcept
+{
+    panicAndAbort("bad operation");
+}
+
 }

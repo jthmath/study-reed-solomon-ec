@@ -12,4 +12,4 @@ add_executable(study_reed_solomon_ec
         galois.cc
         reedsolomon.h
         reedsolomon.cc
-        common.cc)
+        common.cc matric.cc matric.h)

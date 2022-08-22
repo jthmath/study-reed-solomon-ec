@@ -48,6 +48,10 @@ public:
         return a_ == one_uint8;
     }
 
+    GaloisUInt8& operator=(const GaloisUInt8& rhs) = default;
+
+    GaloisUInt8& operator=(GaloisUInt8&& rhs) = default;
+
     bool operator==(GaloisUInt8 rhs) const
     {
         return a_ == rhs.a_;
