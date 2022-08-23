@@ -42,6 +42,11 @@ public:
 
     // 移除若干行
     Matrix removeRows(const std::vector<int>& rows);
+
+    std::vector<std::vector<GaloisUInt8>> rawData() const
+    {
+        return a_;
+    }
 };
 
 }
