@@ -2,6 +2,7 @@
 #define REED_SOLOMON_MATRIC_H_
 
 #include <vector>
+#include <algorithm>
 
 #include "galois.h"
 
